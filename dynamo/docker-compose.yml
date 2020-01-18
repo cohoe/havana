@@ -1,0 +1,8 @@
+---
+version: '3'
+services:
+  dynamodb:
+    container_name: dynamodb
+    image: "docker.io/amazon/dynamodb-local:latest"
+    ports:
+      - "8000:8000"
