@@ -1,0 +1,10 @@
+---
+version: '3'
+services:
+  zookeeper:
+    container_name: zk
+    image: "docker.io/library/zookeeper:latest"
+    ports:
+      - 2181:2181
+    volumes:
+      - "./data/:/data"
