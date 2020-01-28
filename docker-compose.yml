@@ -1,0 +1,15 @@
+---
+version: '3'
+services:
+  postgresql:
+    image: "docker.io/library/postgres:latest"
+    volumes:
+      - "./postgresql/data/:/var/lib/postgresql/data"
+    ports:
+      - "5432:5432"
+    environment:
+      POSTGRES_PASSWORD: s3krAt
+  redis:
+    image: "docker.io/library/redis:latest"
+    ports:
+      - "6379:6379"
