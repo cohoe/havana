@@ -8,6 +8,6 @@ redis
 psycopg2-binary>=2.8.4
 python-slugify
 kazoo>=2.6.1
-treelib>=1.5.5
+treelib==1.5.5
 elasticsearch>=7.5.1,<8.0.0
 elasticsearch-dsl
