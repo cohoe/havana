@@ -8,6 +8,7 @@ Requirements
 * Podman (or docker-compose)
 * podman-compose (or docker-compose)
 * Python 3 with pip & virtualenv (virtualenvwrapper is encouraged for easy setup)
+* Local copies of the other repos (cohoe/[jamaica, england, tortuga])
 
 Setup
 -----
