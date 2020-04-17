@@ -1,0 +1,13 @@
+Flask>=1.1.1
+sqlalchemy>=1.3.13
+flask-restx
+PyYAML>=5.3
+jinja2>=2.11.1
+requests>=2.22.0
+redis
+psycopg2-binary>=2.8.4
+python-slugify
+kazoo>=2.6.1
+treelib>=1.5.5
+elasticsearch>=7.5.1,<8.0.0
+elasticsearch-dsl

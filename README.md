@@ -9,6 +9,29 @@ Requirements
 * podman-compose (or docker-compose)
 * Python 3 with pip & virtualenv (virtualenvwrapper is encouraged for easy setup)
 
-Usage
+Setup
 -----
 
+### Python Virtualenv
+Ensure you have a venv based on python3.
+
+```
+mkvirtualenv amari -p python3
+```
+
+Install all requirements from the `requirements.txt`.
+
+```
+pip install -r requirements.txt
+```
+
+### Start the stack
+```
+podman-compose up -d
+```
+
+### Bootstrap the Data
+```
+DATABASE_USERNAME=postgres DATABASE_PASSWORD=putthedbpasshere DATABASE=amari amari init
+```
+The password should match whats in the `docker-compose.yml`.
