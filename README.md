@@ -43,7 +43,7 @@ podman-compose up -d
 ```
 DATABASE_USERNAME=postgres DATABASE_PASSWORD=putthedbpasshere DATABASE_NAME=amari amari init
 ```
-The password should match whats in the `docker-compose.yml`. Edit it if you want to.
+The password and database name should match whats in the `docker-compose.yml`. Edit it if you want to.
 
 ### Fill in the Tables
 Ensure you're still in the virtualenv (it usually prefixes your shell).
