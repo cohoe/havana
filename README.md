@@ -19,7 +19,7 @@ Ensure you have a venv based on python3.
 mkvirtualenv amari -p python3
 ```
 
-Install all requirements from the `requirements.txt`.
+Install all requirements from this repo's `requirements.txt`.
 
 ```
 pip install -r requirements.txt
@@ -30,8 +30,13 @@ pip install -r requirements.txt
 podman-compose up -d
 ```
 
-### Bootstrap the Data
+### Bootstrap the Database
 ```
 DATABASE_USERNAME=postgres DATABASE_PASSWORD=putthedbpasshere DATABASE=amari amari init
 ```
 The password should match whats in the `docker-compose.yml`.
+
+### Run API
+```
+python3 jamaica/app.py
+```
