@@ -5,10 +5,14 @@ Podman/Docker app stack.
 
 Requirements
 ------------
-* Podman (or docker-compose)
+* Podman (or Docker)
 * podman-compose (or docker-compose)
 * Python 3 with pip & virtualenv (virtualenvwrapper is encouraged for easy setup)
-* Local copies of the other repos (cohoe/[jamaica, england, tortuga])
+* Local copies of the other repos:
+  * [cohoe/jamaica](https://github.com/cohoe/jamaica)
+  * [cohoe/barbados](https://github.com/cohoe/barbados)
+  * [cohoe/tortuga](https://github.com/cohoe/tortuga)
+  * [cohoe/england](https://github.com/cohoe/england)
 
 Setup
 -----
