@@ -2,7 +2,7 @@
 version: '3'
 services:
   postgresql:
-    image: "docker.io/library/postgres:latest"
+    image: "docker.io/bitnami/postgresql:latest"
     ports:
       - "5432:5432"
     environment:
@@ -17,9 +17,11 @@ services:
     ports:
       - "9736:80"
   zookeeper:
-    image: "docker.io/library/zookeeper:latest"
+    image: "docker.io/bitnami/zookeeper:latest"
     ports:
       - "2181:2181"
+    environment:
+      ALLOW_ANONYMOUS_LOGIN: "yes"
   zoonavigator:
     image: "docker.io/elkozmon/zoonavigator"
     ports:
