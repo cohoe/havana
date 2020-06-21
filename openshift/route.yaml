@@ -1,0 +1,20 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  annotations:
+    kubernetes.io/tls-acme: "true"
+  labels:
+    app: jamaica
+  name: jamaica-public
+spec:
+  host: jamaica.grantcohoe.com
+  port:
+    targetPort: 8080-tcp
+  tls:
+    insecureEdgeTerminationPolicy: Redirect
+    termination: edge
+  to:
+    kind: Service
+    name: jamaica
+    weight: 100
+  wildcardPolicy: None
