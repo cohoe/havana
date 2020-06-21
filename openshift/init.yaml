@@ -1,0 +1,27 @@
+---
+apiVersion: batch/v1
+kind: Job
+metadata:
+  name: init
+spec:
+  parallelism: 1    
+  completions: 1    
+  backoffLimit: 1
+  template:         
+    metadata:
+      name: init
+    spec:
+      containers:
+      - name: init
+        env:
+        - name: AMARI_DATABASE_PASSWORD
+          valueFrom:
+            secretKeyRef:
+              key: db_password
+              name: postgres
+        envFrom:
+        - configMapRef:
+            name: jamaica
+        image: jamaica
+        command: ["amari", "init"]
+      restartPolicy: Never
