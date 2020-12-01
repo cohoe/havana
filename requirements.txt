@@ -13,3 +13,4 @@ elasticsearch>=7.5.1,<8.0.0
 elasticsearch-dsl
 beautifulsoup4
 ruamel.yaml
+Flask-UUID
