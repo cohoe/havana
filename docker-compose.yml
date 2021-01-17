@@ -6,7 +6,8 @@ services:
     ports:
       - "5432:5432"
     environment:
-      POSTGRES_DB: amari
+      POSTGRES_DATABASE: amari
+      POSTGRES_USERNAME: amari
       POSTGRES_PASSWORD: s3krAt
   redis:
     image: "docker.io/library/redis:latest"
