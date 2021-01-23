@@ -14,3 +14,4 @@ elasticsearch-dsl
 beautifulsoup4
 ruamel.yaml
 Flask-UUID
+sqlalchemy_json_querybuilder
