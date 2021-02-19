@@ -18,3 +18,4 @@ sqlalchemy_json_querybuilder
 yq
 flask_caching
 numpy
+pytest
