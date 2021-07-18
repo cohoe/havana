@@ -1,6 +1,6 @@
 Flask>=1.1.1
 sqlalchemy>=1.3.13
-flask-restx
+flask-restx>=0.4.0
 PyYAML>=5.3
 jinja2>=2.11.1
 requests>=2.22.0
