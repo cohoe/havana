@@ -19,3 +19,5 @@ yq
 flask_caching
 numpy
 pytest
+# https://stackoverflow.com/questions/71695691/flask-app-ctx-stack-ident-func-error-due-to-ident-func-deprecated-in-we
+werkzeug==2.0.3
